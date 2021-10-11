@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+  <template type="admin" title="payment_profile_RayPay" version_id="1" version_string="1.0.0"><![CDATA[
+<xf:textboxrow name="options[raypay_user_id]" value="{$profile.options.raypay_user_id}"
+	label="{{ phrase('raypay_user_id_text') }}"
+	hint="{{ phrase('required') }}">
+</xf:textboxrow>
+<xf:textboxrow name="options[raypay_marketing_id]" value="{$profile.options.raypay_marketing_id}"
+	label="{{ phrase('raypay_marketing_id_text') }}"
+	hint="{{ phrase('required') }}">
+</xf:textboxrow>
+<xf:checkboxrow>
+	<xf:option name="options[raypay_sandbox]" selected="$profile.options.raypay_sandbox" label="{{ phrase('raypay_sandbox_text') }}" />
+</xf:checkboxrow>
+<xf:textboxrow name="options[raypay_success_message]"
+    explain="{{ phrase('raypay_payment_comment') }}"
+    value="{{ $profile.options.raypay_success_message ? $profile.options.raypay_success_message : phrase('raypay_default_success_message') }}"
+	label="{{ phrase('raypay_success_message_text') }}">
+</xf:textboxrow>
+<xf:textboxrow name="options[raypay_failed_message]"
+    explain="{{ phrase('raypay_payment_comment') }}"
+    value="{{ $profile.options.raypay_failed_message ? $profile.options.raypay_failed_message : phrase('raypay_default_failed_message') }}"
+	label="{{ phrase('raypay_failed_message_text') }}">
+</xf:textboxrow>
+<xf:hiddenval name="options[legacy]" value="{{ $profile.options.legacy ? 1 : 0 }}" />
+]]></template>
+  <template type="public" title="payment_initiate_RayPay" version_id="1" version_string="1.0.0"><![CDATA[<xf:css src="payment_initiate.less" />
+<xf:title>{{ phrase('raypay_confirm_payment_details') }}</xf:title>
+<form action="{$endpointUrl}" class="block block--paymentInitiate" method="GET">
+	<div class="block-container">
+		<div class="block-body">
+			<xf:formrow controlid="element">
+				<div class="formRow-explain">{{ phrase('payments_processed_securely_by_x', {'link': 'https://raypay.ir/', 'provider': 'RayPay'}) }}</div>
+			</xf:formrow>
+			<hr class="formRowSep" />
+			<xf:formrow label="" rowtype="button">
+				<xf:button type="submit" icon="payment">
+					{{ phrase('pay_x', {'cost': $purchase.cost|currency($purchase.currency)}) }}
+				</xf:button>
+			</xf:formrow>
+			<xf:foreach loop="$payment" value="$value" key="$name">
+				<input type="hidden" name="{$name}" value="{$value}" />
+			</xf:foreach>
+		</div>
+	</div>
+</form>]]></template>
+</templates>

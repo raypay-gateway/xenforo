@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phrases>
+  <phrase title="raypay_user_id_text" version_id="1" version_string="1.0.0"><![CDATA[شناسه كاربري]]></phrase>
+  <phrase title="raypay_marketing_id_text" version_id="1" version_string="1.0.0"><![CDATA[شناسه كسب و كار]]></phrase>
+  <phrase title="raypay_confirm_payment_details" version_id="1" version_string="1.0.0"><![CDATA[تایید پرداخت راي پي]]></phrase>
+  <phrase title="raypay_default_failed_message" version_id="1" version_string="1.0.0"><![CDATA[پرداخت شما ناموفق بوده است. لطفا مجددا تلاش نمایید یا در صورت بروز اشکال با مدیر سایت تماس بگیرید.]]></phrase>
+  <phrase title="raypay_default_success_message" version_id="1" version_string="1.0.0"><![CDATA[پرداخت شما با موفقیت انجام شد.]]></phrase>
+  <phrase title="raypay_failed_message_text" version_id="1" version_string="1.0.0"><![CDATA[پیام پرداخت ناموفق]]></phrase>
+  <phrase title="raypay_payment_comment" version_id="1" version_string="1.0.0"><![CDATA[متن پیامی که می خواهید بعد از پرداخت به کاربر نمایش دهید را وارد کنید. همچنین می توانید از شورت کد {invoice_id} برای نمایش شناسه پرداخت راي پي استفاده نمایید.]]></phrase>
+  <phrase title="raypay_sandbox_text" version_id="1" version_string="1.0.0"><![CDATA[فعالسازي SandBox]]></phrase>
+  <phrase title="raypay_success_message_text" version_id="1" version_string="1.0.0"><![CDATA[پیام پرداخت موفق]]></phrase>
+  <phrase title="you_must_provide_raypay_user_id" version_id="1" version_string="1.0.0"><![CDATA[شناسه كاربري را وارد كنيد.]]></phrase>
+  <phrase title="you_must_provide_raypay_marketing_id" version_id="1" version_string="1.0.0"><![CDATA[شناسه كسب و كار را وارد كنيد.]]></phrase>
+</phrases>

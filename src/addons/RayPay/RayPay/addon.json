@@ -1,0 +1,14 @@
+{
+    "legacy_addon_id": "RayPay/RayPay",
+    "title": "RayPay",
+    "description": "RayPay Payment Gateway",
+    "version_id": 1,
+    "version_string": "1.0",
+    "dev": "Hanieh Ramzanpour, Publisher: RayPay",
+    "dev_url": "https://raypay.ir/",
+    "faq_url": "",
+    "support_url": "",
+    "extra_urls": [],
+    "require": [],
+    "icon": "icon.png"
+}
